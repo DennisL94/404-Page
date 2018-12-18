@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Vibur');
+
+body, html {
+  background: linear-gradient(to right top, #2a2a2a, #24333e, #004045, #034b34, #3c4f10) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1::before {
+  font-size: 85px;
+  font-weight: bolder;
+  font-style: italic;
+  color: rgb(255, 255, 255);
+  font-family: 'Vibur', cursive;
+  content: '4 0 4';
+}
+
+button {
+  border-radius: 10%;
+  padding: 5px;
+  text-align: center;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: 1s;
+  left: 2px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+}
+
+.container-content::before {
+  font-size: 26px;
+  content: 'We did found this lonely Wumpus though!';
+}
+
+.wumpus {
+  margin: auto;
+  background-image: url(https://66.media.tumblr.com/d2fbb6dceab3af92dd6df48593275315/tumblr_p2ma6anKVk1rnv6lfo1_400.gif);
+  background-size: 200px 200px;
+  width: 200px;
+  height: 200px;
+}
+
+.wumpus:hover {
+  transition: 1s;
+  background-size: 175px 175px;
+  width: 175px;
+  height: 175px;
+  cursor: help;
+}
